@@ -1,6 +1,6 @@
 import axios from "axios";
-const SERVR_URL = import.meta.env.VITE_SERVER_URL;
-// const SERVR_URL = window.location.origin;
+// const SERVR_URL = import.meta.env.VITE_SERVER_URL;
+const SERVR_URL = window.location.origin;
 export default {
   post : {
     sendMail : async (input) => {
