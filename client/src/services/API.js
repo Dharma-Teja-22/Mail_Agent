@@ -5,7 +5,7 @@ export default {
   post : {
     sendMail : async (input) => {
       try{
-        const response = await axios.post(`${SERVR_URL}/mailGen`,{input});
+        const response = await axios.post(`${SERVR_URL}/v1/api/mailGen`,{input});
         // const response = await axios.post(`${SERVR_URL}/mailGen`,{input});
         console.log(response, "From UI");
         return response.data;
